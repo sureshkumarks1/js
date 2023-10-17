@@ -1,0 +1,9 @@
+*{
+    border:0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+.heading h2{
+    color:green;
+    font-size: 26px;
+}
