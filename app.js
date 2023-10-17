@@ -13,5 +13,8 @@ for(let powder of names){
 }
 */
 names.forEach(function(powder){
-    console.log(powder);
+    let li = document.createElement("li");
+    li.innerText = powder;
+    kitchenitemselect.appendChild(li);
+    // console.log(powder);
 });
