@@ -32,7 +32,14 @@ kitchenInput.addEventListener('keypress', function(event){
     }
 });
 
+function deleteValueFromListitem(event){
+    if(event.target.classList[0]==='fas'){
+        let item = event.target.parentElement;
+        item.remove();
+    }
+}
 
+kitchenItemSelect.addEventListener("click", deleteValueFromListitem);
 
 
 
