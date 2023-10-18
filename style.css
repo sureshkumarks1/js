@@ -3,7 +3,61 @@
     padding : 0px;
     box-sizing: border-box;
 }
-.heading h2{
-    color:green;
-    font-size: 26px;
+body{
+    background-color: #a7c2eb;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    /* height: 600px; */
+    /* align-items: flex-start; */
+    margin-top: 50px;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.inputsection{
+    justify-items: center;
+    /* border: 1px solid black; */
+    align-items: center;
+    margin:  0px auto;
+
+}
+.inputsection input{
+    outline: none;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+}
+.inputsection button{
+    outline: none;
+    width: 80px;
+    font-size: 16px;
+
+    font-weight: bold;
+    height: 30px;
+    /* padding: 10px; */
+    color: #4b44a8;
+    background-color: #b1ebfa;
+}
+.heading{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+}
+.itemslist{
+    display: flex;
+    align-items: center;
+}
+.itemslist li{
+    width: 385px;
+    height: 40px;
+    padding: 10px;
+    background-color: #ec427b;
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 16px;
+
 }
