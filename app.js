@@ -12,12 +12,17 @@ function valueFromDom(){
     kitchenInput.value = "";
     kitchenInput.focus();
     li.style.cssText = 'animation-name: slideIn';
-
-    // console.log(li);
-    
+    // console.log(li);    
 }
 
 submit.addEventListener("click", valueFromDom);
+kitchenInput.addEventListener('keypress', function(event){
+    if(event.key ==='Enter'){
+        event.preventDefault();
+        document.querySelector(".submit").click();
+        
+    }
+});
 
 
 
