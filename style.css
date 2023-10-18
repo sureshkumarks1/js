@@ -16,7 +16,7 @@ body{
     /* align-items: flex-start; */
     margin-top: 50px;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .inputsection{
     justify-items: center;
@@ -30,6 +30,7 @@ body{
     width: 300px;
     height: 30px;
     padding: 10px;
+    /* margin: 10px; */
 }
 .inputsection button{
     outline: none;
@@ -43,8 +44,8 @@ body{
     background-color: #b1ebfa;
 }
 .heading{
-    font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif; */
     color: black;
     text-align: center;
 }
@@ -61,5 +62,22 @@ body{
     margin-bottom: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-size: 16px;
+    animation: 0.3s ease-in-out;
+    animation-name: slideIn;
 
+}
+.kitchenitemlist li:hover{
+    background-color: #d346a4;
+    /* scale: 1.05; */
+}
+
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: rotateX(60deg) translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform:rotateX(0deg) translateY(0px);
+    }
 }

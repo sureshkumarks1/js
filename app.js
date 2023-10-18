@@ -4,10 +4,13 @@ let kitchenInput = document.querySelector(".kitcheninput");
 let submit = document.querySelector(".submit");
 
 function valueFromDom(){
-    let li = kitchenInput.value;
+    let kitchenInputData = kitchenInput.value;
+    let li = document.createElement("li");
+    li.innerText = kitchenInputData;    
+    kitchenItemSelect.appendChild(li);
+    kitchenInput.value = "";
+    // console.log(li);
     
-    console.log(li);
-
 }
 
 submit.addEventListener("click", valueFromDom);
