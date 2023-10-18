@@ -8,7 +8,11 @@ function valueFromDom(){
     let li = document.createElement("li");
     li.innerText = kitchenInputData;    
     kitchenItemSelect.appendChild(li);
+    
     kitchenInput.value = "";
+    kitchenInput.focus();
+    li.style.cssText = 'animation-name: slideIn';
+
     // console.log(li);
     
 }
