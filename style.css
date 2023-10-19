@@ -84,3 +84,7 @@ body{
         transform:rotateX(0deg) translateY(0px);
     }
 }
+.slideOut{
+    transform: rotateX(60deg) translateY(-10px);
+    transition: 0.3s;
+}

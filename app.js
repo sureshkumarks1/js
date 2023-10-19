@@ -35,7 +35,11 @@ kitchenInput.addEventListener('keypress', function(event){
 function deleteValueFromListitem(event){
     if(event.target.classList[0]==='fas'){
         let item = event.target.parentElement;
-        item.remove();
+        item.classList.add('slideOut');
+        item.addEventListener("transitionend", () => {
+            item.remove();
+            // console.log("Transition ended");
+          });
     }
 }
 
